@@ -156,7 +156,7 @@ input[type="submit"]{
     top: 25px;
 }
 
-/* lowewr right panel */
+/* lower right panel */
 .lower-right-panel{
     background-color: white;
     width: 40%;
@@ -165,4 +165,45 @@ input[type="submit"]{
     position: absolute;
     display: flex;
     bottom: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 25px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+.circle-icon{
+    display: flex;
+    justify-content: center;
+}
+.uicon{
+    margin-top: 15px;
+}
+.vicon{
+    margin-bottom: 15px;
+}
+.mail-panel{
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.phone-panel{
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.location-panel{
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 25px;
 }
