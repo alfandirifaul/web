@@ -183,37 +183,32 @@ input[type="submit"]{
 }
 .circle-icon{
     display: flex;
-    margin: 10px;
+    flex-direction: row;
+    align-items: center; 
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-left: 10px; 
 }
 .box-icon{
     margin: 5px;
     text-align: center;
     background-color: whitesmoke;
     border-radius: 10px;
-    height: 65px;
-    margin-left: 15px;
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
+    height: auto;
     margin-left: 40px;
     margin-right: 40px;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+    flex-direction: column; 
 }
+
 .empty-container-contact-upper{
     padding-top: 15px;
 }
 .empty-container-contact-lower{
     margin-bottom: 20px;
-}
-.text-contact{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-left: 25px;
-}
-.desc-text-contact{
-    font-size: 16px;
-    margin-top: 20px;
-    margin-left: 25px;
 }
