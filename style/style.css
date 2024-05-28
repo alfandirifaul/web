@@ -1,22 +1,75 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 
+/****************************************************/
+.navbar {
+    background-color: #333;
+    overflow: auto;
+}
 
+.nav-item {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    justify-content: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.nav-item:hover {
+    background-color: #ddd;
+    color: black;
+}
 
+/**************************** home **********************************/
+.main-container-home{
+    background: url(../assets/home-bg.jpeg);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+.home-title{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 200px;
+    padding-top: 250px;
+    font-size: 48px;
 
-
-
+}
+.desc-home{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 200px;
+    margin-top: -100px;
+}
+#learn-more-btn{
+    background: linear-gradient(to left, royalblue, #00BFFF);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    margin-left: 200px;
+    margin-top: -250px;
+}
+#learn-more-btn:hover{
+    background: linear-gradient(to left, #1110BFFF, royalblue);
+}
+#learn-more-btn:active{
+    background: linear-gradient(to left, darkblue, #00BFFF);
+}
 
 
 
 
 
 /***********************    Contact-Us    **********************/
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
 .main-container-contact {
-    background-color: whitesmoke;
+    background: url(../assets/home-bg.jpeg);
     height: 100vh;
     display: flex;
     padding: 25px 50px 25px 50px;
@@ -31,21 +84,26 @@
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .get-in-touch{
     margin-top: 20px;
     font-size: 18px;
     color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contact-title{
     font-size: 28px;
     color: black;
     margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contact-desc{
-    font-size: 18px;
+    font-size: 16px;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 .contact-line{
@@ -57,6 +115,7 @@
 
 form {
     margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .name-inputs {
@@ -84,9 +143,10 @@ label {
     display: block;
     font-size: 1.1em;
     margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], input[type="number"], textarea {
     border: none;
     border-radius: 5px;
     display: block;
@@ -104,6 +164,7 @@ input[type="email"]{
 
 textarea{
     height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 input[type="checkbox"] {
     margin-top: 10px;
@@ -115,6 +176,7 @@ label[for="privacy-policy"] {
     font-size: 0.8em;
     display: inline-block;
     margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type="submit"]{
@@ -130,9 +192,23 @@ input[type="submit"]{
     cursor: pointer;
 }
 
+input[type="submit"]:hover{
+    background-color: blue;
+}
+input[type="submit"]:active{
+    background-color: darkblue;
+}
+
+#form-status-error{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    background-color: whitesmoke;
+}
+
 /* right panel */
 .right-panel{
-    background-color: whitesmoke;
+    background-color: none;
     height: 100%;
     width: 50%;
     display: block;
@@ -142,7 +218,7 @@ input[type="submit"]{
     justify-content: space-between;
     display: flex;
     align-items: center;
-
+    margin-left: 60px;
 }
 
 /* upper right panel */
@@ -154,11 +230,12 @@ input[type="submit"]{
     position: absolute;
     display: flex;
     top: 25px;
+    
 }
 
 /* lower right panel */
 .lower-right-panel{
-    background-color: white;
+    background: rgba(255, 255, 255, 0.25);
     width: 40%;
     height: 40%;
     border-radius: 10px;
@@ -170,16 +247,16 @@ input[type="submit"]{
 }
 .circle{
     border-radius: 50%;
-    background-color: lightblue;
+    background-color: royalblue;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
 }
 .icon{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 .circle-icon{
     display: flex;
@@ -191,13 +268,15 @@ input[type="submit"]{
     flex-direction: column;
     align-items: flex-start; 
     margin-left: 10px; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 .box-icon{
     margin: 5px;
     text-align: center;
-    background-color: whitesmoke;
+    background: rgba(194, 188, 188, 0.25);
     border-radius: 10px;
-    height: auto;
+    height: 100px;
+    padding-left: 25px;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
@@ -211,4 +290,11 @@ input[type="submit"]{
 }
 .empty-container-contact-lower{
     margin-bottom: 20px;
+}
+
+/* right upper panel */
+.right-panel-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }

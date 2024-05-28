@@ -7,47 +7,61 @@
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/main.js"></script>
 </head>
+
 <body>
+
     <div class="main-container-contact">
         <div class="left-panel">
             <h5 class="get-in-touch">Get in Touch</h5>
             <h1 class="contact-title">Let's Chat, Reach Out<br>to Us</h1>
-            <p class="contact-desc">Have questions or feedback? We're here to help. Send us a<br>message, and we'll respond within 24 hours</p>
+            <p class="contact-desc">Have questions or feedback? We're here to help. Send us a message, and we'll respond within 24 hours</p>
             <div class="contact-line"></div>
             <form action="/submit-message" method="post">
                 <div class="name-inputs">
                     <div class="first-name-input">
                       <label for="first-name">First Name</label>
-                      <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+                      <input type="text" name="first-name" id="first-name" placeholder="First name" >
                     </div>
                     <div class="last-name-input">
                       <label for="last-name">Last Name</label>
-                      <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                      <input type="text" name="last-name" id="last-name" placeholder="Last name" >
                     </div>
                 </div>
 
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email address" required>
+                <input type="email" name="email" id="email" placeholder="Email address">
+
+                <label for="telephone">Phone</label>
+                <input type="number" name="telephone" id="telephone" placeholder="Phone number">
 
                 <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Leave us message" rows="4" cols="50" required></textarea>
+                <textarea name="message" id="message" placeholder="Leave us message" rows="4" cols="50" ></textarea>
 
-                <input type="checkbox" name="privacy-policy" id="privacy-policy" required>
+                <p id="form-status-error" style="display: none;">Email is not valid</p>
+
+                <input type="checkbox" name="privacy-policy" id="privacy-policy" >
                 <label for="privacy-policy">I agree to our friendly <a href="privacy-policy.html">privacy policy</a></label>
-                <input type="submit" value="Send message">
+                <input type="submit" value="Send message" id="submit-contact">
+
+            
+
             </form>
         </div>
 
         <div class="right-panel">
             <div class="upper-right-panel">
-
+                <img src="../assets/owner.jpg" alt="" class="right-panel-img">
             </div>
 
             <div class="lower-right-panel">
                 <div class="empty-container-contact-upper"></div>
                 <div class="mail-panel box-icon">
                     <div class="circle-icon">
-                        <span class="circle circle-icon"><img class="icon circle-icon" src="../assets/mail.png" alt=""></span>
+                        <span class="circle circle-icon">
+                            <a href="mailto:vkellogs.mail@webshop.com">
+                                <img class="icon circle-icon" src="../assets/mail.png" alt="">
+                            </a>
+                        </span>
                         <div class="details">
                             <h3 >Email</h3>
                             <p >vkellogs.mail@webshop.com</p>
@@ -56,8 +70,12 @@
                 </div>
                 <div class="phone-panel box-icon">
                     <div class="circle-icon">
-                        <span class="circle circle-icon"><img class="icon circle-icon" src="../assets/telephone.png" alt=""></span>
-                        <div class="details">
+                        <span class="circle circle-icon">
+                            <a href="tel:1234567890">
+                                <img class="icon circle-icon" src="../assets/telephone.png" alt="">
+                            </a>
+                        </span>
+                        <div class="details">   
                             <h3>Phone</h3>
                             <p >+1 1234 56789</p>
                         </div>
@@ -72,12 +90,11 @@
                         </div>
                     </div>
                 </div>
-                
-
                 <div class="empty-container-contact-lower"></div>
             </div>
         </div>
         
     </div>
+
 </body>
 </html>
