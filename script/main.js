@@ -20,7 +20,7 @@ window.onload = function() {
     form.addEventListener("submit", function(event) {
         var errorMessage = "";
         var phoneLength = telephone.value.toString().length;
-        
+
         if(firstName.value == "" || lastName.value == ""){
             errorMessage = "First name and Last name must be filled.";
         }
@@ -47,4 +47,22 @@ window.onload = function() {
             formStatus.style.display = "none"; 
         }
     });
+}
+
+
+
+// alert page
+var alertBox = document.getElementById("desc-alert");
+alertBox.innerHTML = "";
+var fromContact = document.getElementById("submit-contact");
+
+fromContact.addEventListener('click', function(event){
+    event.preventDefault();
+    window.location.href = '../page/alert.html';
+})
+
+function alertMessage(){
+   if(window.location.pathname === '/contact.html'){
+    alertBox.innerHTML = "Thank you for your message and feedback. "
+   }
 }

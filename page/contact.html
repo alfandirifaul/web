@@ -3,98 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../script/main.js"></script>
 </head>
-
 <body>
 
-    <div class="main-container-contact">
-        <div class="left-panel">
-            <h5 class="get-in-touch">Get in Touch</h5>
-            <h1 class="contact-title">Let's Chat, Reach Out<br>to Us</h1>
-            <p class="contact-desc">Have questions or feedback? We're here to help. Send us a message, and we'll respond within 24 hours</p>
-            <div class="contact-line"></div>
-            <form action="/submit-message" method="post">
-                <div class="name-inputs">
-                    <div class="first-name-input">
-                      <label for="first-name">First Name</label>
-                      <input type="text" name="first-name" id="first-name" placeholder="First name" >
-                    </div>
-                    <div class="last-name-input">
-                      <label for="last-name">Last Name</label>
-                      <input type="text" name="last-name" id="last-name" placeholder="Last name" >
-                    </div>
-                </div>
+    <!-- <header>
+        <nav class="navbar">
+            <a href="#" class="nav-item nav-logo"><img class="nav-logo" src="../assets/logo-no-background.png" alt=""></a>
+            <div class="empty-container-nav"></div>
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Product</a>
+            <a href="#" class="nav-item">Recipe</a>
+            <a href="../index.html#contact" class="nav-item">Contact</a>
+        </nav>
+    </header>
+    <div class="line">
+        <hr class="nav-line">
+    </div> -->
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email address">
+    <!-- <div class="empty-container-header"></div> -->
 
-                <label for="telephone">Phone</label>
-                <input type="number" name="telephone" id="telephone" placeholder="Phone number">
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Leave us message" rows="4" cols="50" ></textarea>
-
-                <p id="form-status-error" style="display: none;">Email is not valid</p>
-
-                <input type="checkbox" name="privacy-policy" id="privacy-policy" >
-                <label for="privacy-policy">I agree to our friendly <a href="privacy-policy.html">privacy policy</a></label>
-                <input type="submit" value="Send message" id="submit-contact">
-
-            
-
-            </form>
+    <div class="contact-us-main">
+        <div class="contact-us-main-upper">
+            <h1 class="contact-us-main-title">Contact Us</h1>
         </div>
-
-        <div class="right-panel">
-            <div class="upper-right-panel">
-                <img src="../assets/owner.jpg" alt="" class="right-panel-img">
+        <div class="contact-us-main-lower">
+            <div class="feedback-question">
+                <a href="../page/feedback.html" class="link-contact">
+                    <img src="../assets/feedback.png" alt="" class="feedback-img">
+                    <h3 class="feedback-title">Feedback and Questions</h3>
+                    <p class="feedback-description">Have questions or feedback? <br> Please feel free to reach out.</p>
+                </a>
             </div>
-
-            <div class="lower-right-panel">
-                <div class="empty-container-contact-upper"></div>
-                <div class="mail-panel box-icon">
-                    <div class="circle-icon">
-                        <span class="circle circle-icon">
-                            <a href="mailto:vkellogs.mail@webshop.com">
-                                <img class="icon circle-icon" src="../assets/mail.png" alt="">
-                            </a>
-                        </span>
-                        <div class="details">
-                            <h3 >Email</h3>
-                            <p >vkellogs.mail@webshop.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="phone-panel box-icon">
-                    <div class="circle-icon">
-                        <span class="circle circle-icon">
-                            <a href="tel:1234567890">
-                                <img class="icon circle-icon" src="../assets/telephone.png" alt="">
-                            </a>
-                        </span>
-                        <div class="details">   
-                            <h3>Phone</h3>
-                            <p >+1 1234 56789</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="location-panel box-icon">
-                    <div class="circle-icon">
-                        <span class="circle circle-icon"><img class="icon circle-icon" src="../assets/location.png" alt=""></span>
-                        <div class="details">
-                            <h3>Location</h3>
-                            <p>Battle Creek, Michigan, United States</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="empty-container-contact-lower"></div>
+    
+            <div class="faq">
+                <a href="#" class="link-contact"></a>
+                <img src="../assets/faq.png" alt="" class="faq-img">
+                <h3 class="faq-title">FAQ</h3>
+                <p class="faq-desc">Review the response to the most common <br> question received on vkellogs.com.</p>
             </div>
         </div>
-        
+
+        <div class="contact-us-option">
+            <h1 class="contact-title">Contact Us by Email</h1>
+            <div class="mail-panel box-icon">
+                <div class="circle-icon by-email">
+                    <span class="circle circle-icon">
+                        <a href="mailto:vkellogs.mail@webshop.com" class="link-contact">
+                            <img class="icon circle-icon" src="../assets/mail.png" alt="">
+                        </a>
+                    </span>
+                    <div class="details">
+                        <h3 >Email</h3>
+                        <p >vkellogs.mail@webshop.com</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="contact-title">Contact Us</h1>
+            <div class="phone-panel box-icon">
+                <div class="circle-icon">
+                    <span class="circle circle-icon">
+                        <a href="tel:1234567890" class="link-contact">
+                            <img class="icon circle-icon" src="../assets/telephone.png" alt="">
+                        </a>
+                    </span>
+                    <div class="details">   
+                        <h3>Phone</h3>
+                        <p >+1 1234 56789</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="location-panel box-icon">
+                <div class="circle-icon">
+                    <span class="circle circle-icon">
+                        <a href="https://www.google.co.id/maps/place/Battle+Creek,+MI,+USA/@42.3027445,-85.2562727,13z/data=!3m1!4b1!4m6!3m5!1s0x8817f1ae31d4bebb:0xfb804ce2cf0ff8b0!8m2!3d42.3211522!4d-85.1797142!16zL20vMDFmcTc?entry=ttu">
+                            <img class="icon circle-icon" src="../assets/location.png" alt="">
+                        </a>
+                    </span>
+                    <div class="details">
+                        <h3>Location</h3>
+                        <p>Battle Creek, Michigan, United States</p>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="desc-option-contact">
+                <p>*If you are under 16 years old, please ask a parent or guardian to contact us on your behalf.
+                    We prioritize the safety and privacy of children.</p>
+            </div>
+        </div>
     </div>
-
+    
 </body>
 </html>
