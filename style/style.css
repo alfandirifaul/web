@@ -69,14 +69,7 @@
 /**************************************************************/
 
 /******************** main about *****************************/
-.about-us-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-}
+
 .banner{
     background: url(../assets/home-banner.jpeg);
     background-size: cover;
@@ -115,9 +108,9 @@
 #whats-new-btn:active{
     border: 5px solid #010C80; ;
 }
+/***************************************************/
 
-
-
+/****************** introduction ************************/
 .story-box-about{
     display: flex;
     flex-direction: row;
@@ -128,19 +121,29 @@
     width: 100%;
     padding: 75px;
     margin: auto;
+    height: 50vh;
+}
+.img-story-container{
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .story-img{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: auto;
     margin-left: 100px;
 }
 .story-desc{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 38px;
     text-align: left;
     margin-left: 100px;
     color: white;
-    line-height: 1.5;
+    line-height: 1.75;
+    width: 50%;
 }
 
 /*************************************************************/
@@ -198,8 +201,69 @@
     color: #010C80;
 }
 
-
 /*************************************************************/
+
+/********************* Our Story main ***************************/
+.our-story-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: #010C80;
+}
+.left-side-story{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.our-story-title{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.our-story-main-title{
+    font-size: 144px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.our-story-describe{
+    font-size: 38px;
+    margin-top: 100px;
+
+}
+.check-it-out{
+    font-size: 38px;
+    margin-top: 100px;
+    color: white;
+    text-decoration: white;
+}
+.check-it-out:hover{
+    color: lightgray;
+}
+.right-side-story{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right-img{
+    width: 1500px;
+    height: auto;
+    margin-left: 100px;
+}
+
+
+
+/****************************************************************/
 
 /******************* main contact *********************/
 .contact-us-main{
