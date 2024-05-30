@@ -2,6 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+}
 .main-container{
     background-color: white;
 }
@@ -17,11 +20,12 @@
 
 } */
 /********************* navbar *******************************/
+
 .navbar {
     background-color: white;
     overflow: auto;
-    height: 150px;
-    width: 80%;
+    height: 200px;
+    width: 100%;
     padding: 20px;
     align-items: center;
     justify-content: center;
@@ -29,7 +33,13 @@
     position: fixed;
     top: 0;
 }
+.navbar-item-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 900px;
 
+}
 .nav-item {
     float: left;
     display: block;
@@ -40,7 +50,7 @@
     text-decoration: none;
     padding: 14px 16px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 48px;
 }
 
 .nav-item:hover {
@@ -48,9 +58,8 @@
 }
 
 .nav-logo{
-    width: 250px;
+    width: 450px;
     height: auto;
-    margin-left: -60px;
 }
 
 .line{
@@ -58,13 +67,13 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: 100px;
+    margin-top: 200px;
     position: fixed;
 }
 .nav-line {
     border: none;
     border-top: 5px solid gray; 
-    width: 80%; 
+    width: 100%; 
 }
 /**************************************************************/
 
@@ -74,7 +83,7 @@
     background: url(../assets/home-banner.jpeg);
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 1500px !important;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -84,7 +93,7 @@
     align-items: center;
 }
 .img-logo-banner{
-    width: 600px;
+    width: 1200px;
     height: auto;
     margin-left: 100px;
 }
@@ -119,9 +128,9 @@
     margin-top: 50px;
     background-color: #010C80;
     width: 100%;
-    padding: 75px;
+    padding: 30px;
     margin: auto;
-    height: 50vh;
+    height: 75vh;
 }
 .img-story-container{
     width: 500px;
@@ -138,12 +147,12 @@
 }
 .story-desc{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 38px;
+    font-size: 46px;
     text-align: left;
     margin-left: 100px;
     color: white;
     line-height: 1.75;
-    width: 50%;
+    width: 60%;
 }
 
 /*************************************************************/
