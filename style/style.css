@@ -5,22 +5,15 @@
 body{
     width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 .main-container{
     background-color: white;
 }
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* This makes sure the body takes up at least the full height of the viewport */
-    /* margin: 0; /* This removes the default margin */
 
-/* .empty-container-header{
-    height: 100px;
 
-} */
 /********************* navbar *******************************/
-
 .navbar {
     background-color: white;
     overflow: auto;
@@ -38,7 +31,6 @@ body{
     flex-direction: row;
     align-items: center;
     padding-left: 900px;
-
 }
 .nav-item {
     float: left;
@@ -52,16 +44,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
-
 .nav-item:hover {
     color: #010C80;
 }
-
 .nav-logo{
     width: 450px;
     height: auto;
 }
-
 .line{
     display: flex;
     justify-content: center;
@@ -77,13 +66,23 @@ body{
 }
 /**************************************************************/
 
+/***************************** footer *************************/
+
+
+
+
+
+
+/**************************************************************/
+
+
 /******************** main about *****************************/
 
 .banner{
     background: url(../assets/home-banner.jpeg);
     background-size: cover;
     background-position: center;
-    height: 1500px !important;
+    height: 100vh !important;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -284,6 +283,7 @@ body{
     align-items: center;
 }
 .contact-us-main-upper{
+    margin-top: 250px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -292,20 +292,21 @@ body{
 }
 .contact-us-main-title{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 7.5rem;
     color: #010C80;
     margin-top: 50px;
 }
 .contact-us-main-lower{
     background-color: whitesmoke;
-    height: 50%;
-    width: 80%;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 100px;
+    padding: 100px 0;
 }
 .feedback-question{
     font-family: Arial, Helvetica, sans-serif;
@@ -313,7 +314,7 @@ body{
     padding-top: 20px;
     background-color: white;
     width: 35%;
-    height: 300px;
+    height: 700px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -332,25 +333,25 @@ body{
 }
 
 .feedback-img{
-    width: 100px;
-    margin-bottom: 25px;
+    width: 200px;
+    margin-bottom: 50px;
     margin-top: -15px;
     text-decoration: none ;
 }
 .feedback-title{
-    font-size: 20px;
+    font-size: 48px;
     color: black;
     margin-bottom: 50px;
     text-decoration: none;
 }
 .feedback-description{
-    font-size: 14px;
+    font-size: 36px;
     color: black;
     text-align: center;
     text-decoration: none !important;
 }
 .feedback-question:hover{
-    border: 5px solid #010C80;
+    border: 10px solid #010C80;
 }
 .feedback-question:hover .feedback-title,
 .feedback-question:hover .feedback-description {
@@ -364,7 +365,7 @@ body{
     padding-top: 20px;
     background-color: white;
     width: 35%;
-    height: 300px;
+    height: 700px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -373,66 +374,66 @@ body{
     margin: 20px;
 }
 .faq-img {
-    width: 100px;
-    margin-bottom: 25px;
+    width: 200px;
+    margin-bottom: 50px;
     margin-top: -15px;
 }
 .faq-title {
-    font-size: 20px;
+    font-size: 48px;
     color: black;
     margin-bottom: 50px;
 }
 .faq-desc {
-    font-size: 14px;
+    font-size: 36px;
     color: black;
     text-align: center;
 }
 .faq:hover {
-    border: 5px solid #010C80;
+    border: 10px solid #010C80;
 }
 .faq:hover .faq-title,
 .faq:hover .faq-desc {
     color: #010C80;
 }
-
 .contact-us-option{
     width: 80%;
     padding: 75px;
-}
-.contact-title{
-    font-weight: lighter;
 }
 .circle{
     border-radius: 50%;
     background-color: #010C80;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    padding: 25px;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
 }
 .icon{
-    width: 30px;
-    height: 30px;
+    width: 75px;
+    height: 75px;
 }
 .circle-icon{
     display: flex;
     flex-direction: row;
     align-items: center; 
 }
+.circle-icon a{
+    margin: auto;
+}
 .details {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    margin-left: 10px; 
+    margin-left: 75px; 
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 .box-icon{
     margin: 5px;
     text-align: center;
     background:  whitesmoke;
-    border-radius: 10px;
-    height: 125px;
+    border-radius: 20px;
+    height: 250px;
     padding-left: 70px;
     margin-right: 40px;
     display: flex;
@@ -442,7 +443,7 @@ body{
 }
 .desc-option-contact{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 32px;
     text-align: left;
     margin: 50px;
     display: flex;
@@ -475,7 +476,6 @@ body{
     padding-left: 200px;
     padding-top: 250px;
     font-size: 48px;
-
 }
 .desc-home{
     font-family: Arial, Helvetica, sans-serif;
@@ -650,6 +650,7 @@ body{
     padding: 50px;
     box-sizing: border-box;
     margin-left: 20px;
+    margin-top: 200px;
 
 }
 .get-in-touch{
@@ -659,7 +660,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .contact-title{
-    font-size: 28px;
+    font-size: 48px;
     color: black;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
