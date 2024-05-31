@@ -76,7 +76,7 @@ html{
 /**************************************************************/
 
 
-/******************** main about *****************************/
+/******************** main home / index *****************************/
 
 .banner{
     background: url(../assets/home-banner.jpeg);
@@ -116,8 +116,6 @@ html{
 #whats-new-btn:active{
     border: 5px solid #010C80; ;
 }
-/***************************************************/
-
 /****************** introduction ************************/
 .story-box-about{
     display: flex;
@@ -127,9 +125,9 @@ html{
     margin-top: 50px;
     background-color: #010C80;
     width: 100%;
-    padding: 30px;
+    padding: 200px;
     margin: auto;
-    height: 75vh;
+    height: auto;
 }
 .img-story-container{
     width: 500px;
@@ -142,20 +140,30 @@ html{
 .story-img{
     width: 400px;
     height: auto;
-    margin-left: 100px;
+}
+.story-desc-box{
+    display: flex;
+    flex-direction: column;
 }
 .story-desc{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 46px;
+    font-size: 48px;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 50px;
     color: white;
     line-height: 1.75;
-    width: 60%;
+    text-align: justify;
 }
-
-/*************************************************************/
-
+.learn-more-history{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 200px;
+}
+.learn-more-history:hover{
+    color: gray;
+}
 /********************** cereal intro **************************/
 .many-product{
     display: flex;
@@ -209,8 +217,6 @@ html{
     color: #010C80;
 }
 
-/*************************************************************/
-
 /********************* Our Story main ***************************/
 .our-story-main{
     display: flex;
@@ -230,28 +236,28 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 .our-story-title{
-    font-size: 48px;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 100px;
 }
 .our-story-main-title{
-    font-size: 144px;
+    font-size: 7rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 .our-story-describe{
-    font-size: 38px;
+    font-size: 3rem;
     margin-top: 100px;
-
+    text-align: justify;
 }
 .check-it-out{
-    font-size: 38px;
+    font-size: 4rem;
     margin-top: 100px;
     color: white;
     text-decoration: white;
 }
 .check-it-out:hover{
-    color: lightgray;
+    color: gray;
 }
 .right-side-story{
     width: 40%;
@@ -266,7 +272,7 @@ html{
 .right-img{
     width: 1500px;
     height: auto;
-    margin-left: 100px;
+    margin-left: 300px;
 }
 
 
@@ -463,168 +469,96 @@ html{
 /******************************************************/
 
 /**************************** home **********************************/
-.main-container-home{
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-}
-.home-title{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 200px;
-    padding-top: 250px;
-    font-size: 48px;
-}
-.desc-home{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 200px;
-    margin-top: -100px;
-}
-#learn-more-btn{
-    background: linear-gradient(to left, #010C80, #00BFFF);
-    border: none;
-    border-radius: 5px;
-    height: 30px;
-    width: 100px;
-    color: white;
-    margin-left: 200px;
-    margin-top: -250px;
-}
-#learn-more-btn:hover{
-    background: linear-gradient(to left, #1110BFFF, #010C80);
-}
-#learn-more-btn:active{
-    background: linear-gradient(to left, darkblue, #00BFFF);
-}
+
 /*****************************************************************/
 
-/*************************** About Us  ***********/
+/*************************** About ***************************/
 .about-container{
     background-color: white;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.upper-container-about{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 45%;
-    justify-content: space-between;
-    align-items: center;
-}
-.left-upper-about{
-    background: rgba(194, 188, 188, 0.25);
-    width: 48%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-.img-logo-about{
-    width: 600px;
-}
-.our-mission{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
-.right-upper-about{
-    background: rgba(194, 188, 188, 0.25);
-    width: 48%;
-    height: 95%;
+.about-banner{
+    background: url(../assets/cereal-bowl-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 65vh;
+    margin-top: 150px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+    position: static;
 }
-.right-upper-description{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.about-title{
-    margin-left: -580px;
-    font-size: 36px;
-    padding-bottom: 5px;
+.history-title-main{
+    font-size: 5rem;
     color: #010C80;
+    margin-top: 150px;
+    text-shadow: 2px 2px 5px lightgray;
 }
-.description-text-about{
-    font-size: 18px;
-    text-align: justify;
-    padding: 20px;
-
-}
-
-.lower-container-about{
+.our-history{
+    background-color: #010C80;
+    margin-top: 120px;
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 45%;
-    justify-content: space-between;
     align-items: center;
+    padding: 150px;
+    height: auto;
+    width: 90%;
+    border-radius: 25px;
 }
-.left-lower-about{
-    background: rgba(194, 188, 188, 0.25);
-    width: 48%;
-    height: 95%;
+.history-title{
+    font-size: 6rem;
+    color: white;
+    font-weight: bold;
+}
+.history-desc{
+    color: white;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: 90px;
+}
+.history-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.our-mission{
+    background-color: whitesmoke;
+    color: #010C80;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 150px;
+    height: auto;
+    width: 90%;
+    border-radius: 25px;
 }
-.history{
-    font-family: Arial, Helvetica, sans-serif;
+.our-mission-title{
+    font-size: 6rem;
+    color: #010C80;
+    font-weight: bold;
 }
-.left-lower-description{
-    font-family: Arial, Helvetica, sans-serif;
+.our-mission-desc{
+    color: #010C80;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: 90px;
 }
 
-.right-lower-about{
-    background: rgba(194, 188, 188, 0.25);
-    width: 48%;
-    height: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
 
-}
-.owner-img{
-    width: auto;
-    height: 400px;
-    object-fit: cover; 
-    left: 0;
-}
-.owner-name{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-}
-.owner-left{
-    display: flex;
-    width: 100px;
-    margin-left: -250px;
-    margin-right: 50px;
-    margin-top: -200px;
-    white-space: nowrap;
-}
-.owner-right{
-    display: flex;
-    width: 100px;
-    margin-right : -150px;
-    margin-bottom: -300px;
-    white-space: nowrap;
-
-}
 /*************************************************/
 
 /******************************** product ******************************/
@@ -651,13 +585,14 @@ html{
     font-size: 7.5rem;
     color: #010C80;
     margin-top: 50px;
+    text-shadow: 2px 2px 5px lightgray;
 }
 .product-title-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 200px;
 }
 .product-title{
     font-family: Arial, Helvetica, sans-serif;
@@ -667,10 +602,9 @@ html{
 /***********************************************************************/
 
 
-/***********************    page feedback    **********************/
+/***********************  `feedback    **********************/
 .main-container-contact {
     display: flex;
-    padding: 25px 50px 25px 50px;
     align-items: center;
     flex-direction: row;
     background-color: white;
@@ -681,48 +615,47 @@ html{
     background-color: whitesmoke;
     border-radius: 10px;
     height: auto;
-    width: 80%;
+    width: 90%;
     display: block;
-    border-radius: 10px;
-    padding: 50px;
+    border-radius: 50px;
+    padding: 100px;
     box-sizing: border-box;
     margin-left: 20px;
-    margin-top: 200px;
-
+    margin-top: 300px;
 }
 .get-in-touch{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 3rem;
     color: #010C80;
     font-family: Arial, Helvetica, sans-serif;
 }
 .contact-title{
-    font-size: 48px;
+    font-size: 5rem;
     color: black;
-    margin-top: 20px;
+    margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .contact-desc{
-    font-size: 16px;
+    font-size: 3rem;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
 
 }
 .contact-line{
     border-bottom: 1px solid black;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-bottom: 20px;
     justify-content: center;
 }
-
-form {
-    margin: 10px;
+form{
+    margin: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
-
-.name-inputs {
+.name-inputs{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -742,64 +675,50 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-label {
+label{
     display: block;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 3rem;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: #010C80;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
-
 input[type="text"], input[type="email"], input[type="number"], textarea {
     border: none;
     border-radius: 5px;
     display: block;
-    font-size: 0.85rem;
+    font-size: 2.5rem;
     margin-top: 5px;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
-    height: 30px;
+    height: 100px;
     background-color: white;
 }
 input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, textarea:hover{
     border: 1px solid #010C80;
-
 }
-
 input[type="email"]{
     margin-bottom: 15px;
 }
-
 textarea{
-    height: 100px;
+    height: 500px;
     font-family: Arial, Helvetica, sans-serif;
 }
-input[type="checkbox"] {
-    margin-top: 10px;
-    display: inline-block;
-    width: auto;
-}
-  
-label[for="privacy-policy"] {
-    font-size: 0.8em;
-    display: inline-block;
-    margin-left: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 input[type="submit"]{
     display: block;
     width: 100%;
+    height: 100px;
     background-color: #010C80;
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     cursor: pointer;
+    font-size: 2.5rem;
 }
 
 input[type="submit"]:hover{
@@ -808,15 +727,21 @@ input[type="submit"]:hover{
 input[type="submit"]:active{
     background-color: darkblue;
 }
-
+.form-error-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 #form-status-error{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: red;
     background-color: whitesmoke;
+    font-size: 3rem;
 }
 
 /* right panel */

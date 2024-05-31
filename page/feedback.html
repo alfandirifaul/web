@@ -10,61 +10,64 @@
 
 <body>
    
+    <header>
+        <nav class="navbar">
+            <a href="../index.html#home" class="nav-item nav-logo">
+                <img class="nav-logo" src="../assets/logo-no-background.png" alt="">
+            </a>
+            <div class="navbar-item-box">
+                <a href="../index.html#home" class="nav-item">Home</a>
+                <a href="#" class="nav-item">About</a>
+                <a href="#" class="nav-item">Product</a>
+                <a href="#" class="nav-item">Recipe</a>
+                <a href="/page/contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <div class="main-container-contact">
-
-        <header>
-            <nav class="navbar">
-                <a href="../index.html#home" class="nav-item nav-logo">
-                    <img class="nav-logo" src="../assets/logo-no-background.png" alt="">
-                </a>
-                <div class="navbar-item-box">
-                    <a href="../index.html#home" class="nav-item">Home</a>
-                    <a href="#" class="nav-item">About</a>
-                    <a href="#" class="nav-item">Product</a>
-                    <a href="#" class="nav-item">Recipe</a>
-                    <a href="/page/contact.html" class="nav-item">Contact</a>
-                </div>
-            </nav>
-        </header>
-    
-        <div class="line">
-            <hr class="nav-line">
-        </div>
-
-
-        <div class="feedback-panel">
-            <h5 class="get-in-touch">Get in Touch</h5>
-            <h1 class="contact-title">Let's Chat, Reach Out<br>to Us</h1>
-            <p class="contact-desc">Have questions or feedback? We're here to help. Send us a message, and we'll respond within 24 hours</p>
-            <div class="contact-line"></div>
-            <form action="/submit-message" method="post">
-                <div class="name-inputs">
-                    <div class="first-name-input">
-                      <label for="first-name">First Name</label>
-                      <input type="text" name="first-name" id="first-name" placeholder="First name" >
-                    </div>
-                    <div class="last-name-input">
-                      <label for="last-name">Last Name</label>
-                      <input type="text" name="last-name" id="last-name" placeholder="Last name" >
-                    </div>
-                </div>
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email address">
-
-                <label for="telephone">Phone</label>
-                <input type="number" name="telephone" id="telephone" placeholder="Phone number">
-
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Leave us message" rows="4" cols="50" ></textarea>
-
-                <p id="form-status-error" style="display: none;"></p>
-
-                <input type="submit" value="Send message" id="submit-contact">
-            </form>
-        </div>
+    <div class="line">
+        <hr class="nav-line">
     </div>
+
+    <section id="contact">
+        <div class="main-container-contact">
+            <div class="feedback-panel">
+                <h5 class="get-in-touch">Get in Touch</h5>
+                <h1 class="contact-title">Let's Chat, Reach Out<br>to Us</h1>
+                <p class="contact-desc">Have questions or feedback? We're here to help. Send us a message, and we'll respond within 24 hours</p>
+                <div class="contact-line"></div>
+                <form action="/submit-message" method="post">
+                    <div class="name-inputs">
+                        <div class="first-name-input">
+                          <label for="first-name">First Name</label>
+                          <input type="text" name="first-name" id="first-name" placeholder="First name" >
+                        </div>
+                        <div class="last-name-input">
+                          <label for="last-name">Last Name</label>
+                          <input type="text" name="last-name" id="last-name" placeholder="Last name" >
+                        </div>
+                    </div>
+    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+    
+                    <label for="telephone">Phone</label>
+                    <input type="number" name="telephone" id="telephone" placeholder="Phone number">
+    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Leave us message" rows="4" cols="50" ></textarea>
+                    
+                    <div class="form-error-box">
+                        <p id="form-status-error" style="display: none;"></p>
+                    </div>
+    
+                    <input type="submit" value="Send Message" id="submit-contact">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
 
 </body>
 </html>
