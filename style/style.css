@@ -600,6 +600,86 @@ html{
     color: #010C80;
     text-shadow: 2px 2px 5px gray;
 }
+.product-classification{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background-color: whitesmoke;
+    height: auto;
+    padding: 150px;
+}
+.adult-product{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    margin-right: 50px;
+    padding: 50px;
+}
+.link-product-class{
+    text-decoration: none;
+}
+.adult-img{
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+}
+.adult-product-title{
+    font-size: 5rem;
+    color: black;
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.adult-product-desc{
+    font-size: 3rem;
+    color: black;
+    text-align: justify;
+    padding-top: 50px;
+}
+
+/* farhan bantuin disini */
+.kids-product{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    margin-left: 50px;
+    padding: 50px;
+}
+.kids-img{
+    width: 350px;
+    height: auto;
+    margin-left: 100px;
+}
+.kids-product-title{
+    font-size: 5rem;
+    color: black;
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.kids-product-desc{
+    font-size: 3rem;
+    color: black;
+    text-align: justify;
+    padding-top: 50px;
+}
 
 
 
