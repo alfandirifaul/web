@@ -69,19 +69,3 @@ function alertMessage(){
 
 
 
-$(document).ready(function() {
-    $("#age_mode").on("change", function () {
-        ageModePreview(this);
-    })
-});
-
-function ageModePreview(ele) {
-    if($(ele).prop("checked") == true){
-        $('body').addClass('adult-preview');
-        $('body').removeClass('child-preview');
-    }
-    else if($(ele).prop("checked") == false){
-        $('body').addClass('child-preview');
-        $('body').removeClass('adult-preview');
-    }
-}

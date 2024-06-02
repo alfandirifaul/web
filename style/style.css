@@ -570,7 +570,7 @@ html{
     background: url(../assets/product-banner.jpg);
     background-size: cover;
     background-position: center;
-    height: 90vh !important;
+    height: 70vh !important;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -585,24 +585,32 @@ html{
     font-size: 7.5rem;
     color: #010C80;
     margin-top: 50px;
-    text-shadow: 2px 2px 5px lightgray;
+    text-shadow: 2px 2px 5px gray;
 }
 .product-title-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .product-title{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 7.5rem;
     color: #010C80;
+    text-shadow: 2px 2px 5px gray;
 }
+
+
+
+
+
+
+
 /***********************************************************************/
 
 
-/***********************  `feedback    **********************/
+/***********************  feedback    **********************/
 .main-container-contact {
     display: flex;
     align-items: center;
@@ -725,7 +733,7 @@ input[type="submit"]:hover{
     background-color:#56bfe1;
 }
 input[type="submit"]:active{
-    background-color: darkblue;
+    background-color: ageblue;
 }
 .form-error-box{
     display: flex;
@@ -833,10 +841,10 @@ input[type="submit"]:active{
     font-weight: bold;
 }
 #backtohome-alert-btn:hover{
-    background: linear-gradient(to left, darkblue, blue)
+    background: linear-gradient(to left, ageblue, blue)
 }
 #backtohome-alert-btn:active{
-    background: linear-gradient(to left, black, darkblue);
+    background: linear-gradient(to left, black, ageblue);
 }
 
 
@@ -845,132 +853,3 @@ input[type="submit"]:active{
 
 
 
-/************** switch btn ********/
-div.btn-container{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-div.btn-container i{
-    display: inline-block;
-    position: relative;
-    top: -9px;
-}
-
-label {
-    font-size: 13px;
-    color: #424242;
-    font-weight: 500;
-}
-
-.btn-age-mode-switch{
-    display: inline-block;
-    margin: 0px;
-    position: relative;
-}
-
-.btn-age-mode-switch > label.btn-age-mode-switch-inner{
-    margin: 0px;
-    width: 140px;
-    height: 30px;
-    background: #E0E0E0;
-    border-radius: 26px;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.3s ease;
-    display: block;
-}
-
-.btn-age-mode-switch > label.btn-age-mode-switch-inner:before{
-    content: attr(data-on);
-    position: absolute;
-    font-size: 12px;
-    font-weight: 500;
-    top: 7px;
-    right: 20px;
-}
-
-.btn-age-mode-switch > label.btn-age-mode-switch-inner:after{
-    content: attr(data-off);
-    width: 70px;
-    height: 16px;
-    background: #fff;
-    border-radius: 26px;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0px 0px 6px -2px #111;
-    padding: 5px 0px;
-}
-
-.btn-age-mode-switch > .alert{
-    display: none;
-    background: #FF9800;
-    border: none;
-    color: #fff;
-}
-
-.btn-age-mode-switch input[type="checkbox"]{
-    cursor: pointer;
-    width: 50px;
-    height: 25px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    margin: 0px;
-}
-
-.btn-age-mode-switch input[type="checkbox"]:checked + label.btn-age-mode-switch-inner{
-    background: #151515;
-    color: #fff;
-}
-
-.btn-age-mode-switch input[type="checkbox"]:checked + label.btn-age-mode-switch-inner:after{
-    content: attr(data-on);
-    left: 68px;
-    background: #3c3c3c;
-}
-
-.btn-age-mode-switch input[type="checkbox"]:checked + label.btn-age-mode-switch-inner:before{
-    content: attr(data-off);
-    right: auto;
-    left: 20px;
-}
-
-.btn-age-mode-switch input[type="checkbox"]:checked + label.btn-age-mode-switch-inner{
-}
-
-.btn-age-mode-switch input[type="checkbox"]:checked ~ .alert{
-    display: block;
-}
-
-/*mode preview*/
-.dark-preview{
-    background: #0d0d0d;
-}
-
-.dark-preview div.btn-container i.fa-adult{
-    color: #777;
-}
-
-.dark-preview div.btn-container i.fa-child{
-    color: #fff;
-    text-shadow: 0px 0px 11px #fff;
-}
-
-.white-preview{
-    background: #fff;
-}
-
-.white-preview div.btn-container i.fa-adult{
-    color: #ffa500;
-    text-shadow: 0px 0px 16px #ffa500;
-}
-
-.white-preview div.btn-container i.fa-child{
-    color: #777;
-}
