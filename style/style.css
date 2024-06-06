@@ -3,7 +3,9 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    background-color: #ff0000;
+    width: 100vw;
+    margin: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -17,7 +19,7 @@ html{
 .navbar {
     background-color: white;
     overflow: auto;
-    height: 200px;
+    height: 100px;
     width: 100%;
     padding: 20px;
     align-items: center;
@@ -30,7 +32,7 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 900px;
+    margin-left: 200px;
 }
 .nav-item {
     float: left;
@@ -40,28 +42,30 @@ html{
     text-align: center;
     justify-content: center;
     text-decoration: none;
-    padding: 14px 36px;
+    padding: 14px 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 20px;
 }
 .nav-item:hover {
     color: #010C80;
 }
 .nav-logo{
-    width: 450px;
+    width: 250px;
     height: auto;
+    margin-left: -50px;
+    padding-right: 50px;
 }
 .line{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: 200px;
+    margin-top: 100px;
     position: fixed;
 }
 .nav-line {
     border: none;
-    border-top: 5px solid gray; 
+    border-top: 3px solid gray; 
     width: 100%; 
 }
 /**************************************************************/
@@ -87,12 +91,11 @@ html{
     display: flex;
     flex-direction: column;
     margin: auto;
-    height: 600px;
     justify-content: center;
     align-items: center;
 }
 .img-logo-banner{
-    width: 1200px;
+    width: 700px;
     height: auto;
     margin-left: 100px;
 }
@@ -100,12 +103,12 @@ html{
     background-color: #010C80;
     border: none;
     border-radius: 500px;
-    height: 100px;
-    width: 400px;
-    color: white;
+    height: 70px;
+    width: 210px;
+    color: white;   
     margin-left: 100px;
-    margin-top: 50px;
-    font-size: 48px;
+    margin-top: 50px;   
+    font-size: 24px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -125,7 +128,7 @@ html{
     margin-top: 50px;
     background-color: #010C80;
     width: 100%;
-    padding: 200px;
+    padding: 100px;
     margin: auto;
     height: auto;
 }
@@ -138,7 +141,7 @@ html{
     align-items: center;
 }
 .story-img{
-    width: 400px;
+    width: 200px;
     height: auto;
 }
 .story-desc-box{
@@ -147,7 +150,7 @@ html{
 }
 .story-desc{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 22px;
     text-align: left;
     margin-left: 50px;
     color: white;
@@ -155,11 +158,11 @@ html{
     text-align: justify;
 }
 .learn-more-history{
-    font-size: 3rem;
+    font-size: 26px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-left: 50px;
-    margin-top: 200px;
+    margin-top: 20px;
 }
 .learn-more-history:hover{
     color: gray;
@@ -181,7 +184,7 @@ html{
 }
 .many-product-title{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 130px;
+    font-size: 50px;
     color: #010C80;
     margin-right: -200px;
 }
@@ -196,7 +199,7 @@ html{
 .explore-product .link-product{
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 52px;
+    font-size: 30px;
     color: black;
     font-weight: bold;
 }
@@ -222,36 +225,37 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: auto;
+    height: 10%;
     width: 100%;
     background-color: #010C80;
 }
 .left-side-story{
     width: 60%;
-    height: auto;
+    height: 20%;
     display: flex;
     flex-direction: column;
-    padding: 200px;
+    padding: 100px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 .our-story-title{
-    font-size: 4rem;
+    font-size: 30px;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .our-story-main-title{
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 .our-story-describe{
-    font-size: 3rem;
-    margin-top: 100px;
+    font-size: 1rem;
+    margin-top: 30px;
+    line-height: 1.25;
     text-align: justify;
 }
 .check-it-out{
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: 100px;
     color: white;
     text-decoration: white;
@@ -270,7 +274,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 .right-img{
-    width: 1500px;
+    width: 700px;
     height: auto;
     margin-left: 300px;
 }
@@ -600,71 +604,24 @@ html{
     color: #010C80;
     text-shadow: 2px 2px 5px gray;
 }
-.product-classification{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-    background-color: whitesmoke;
-    height: auto;
-    padding: 150px;
-}
-.adult-product{
-    width: 50%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    margin-right: 50px;
-    padding: 50px;
-}
-.link-product-class{
-    text-decoration: none;
-}
-.adult-img{
-    width: 500px;
-    height: auto;
-    margin-left: 100px;
-}
-.adult-product-title{
-    font-size: 5rem;
-    color: black;
-    margin-top: 50px;
-    font-weight: bold;
-    text-align: center;
-}
-.adult-product-desc{
-    font-size: 3rem;
-    color: black;
-    text-align: justify;
-    padding-top: 50px;
-}
+
 
 /* farhan bantuin disini */
 .kids-product{
-    width: 50%;
-    height: auto;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 50px;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    margin-left: 50px;
-    padding: 50px;
+    padding: 100px;
+
 }
 .kids-img{
     width: 350px;
     height: auto;
-    margin-left: 100px;
 }
 .kids-product-title{
     font-size: 5rem;
@@ -672,7 +629,6 @@ html{
     margin-top: 50px;
     font-weight: bold;
     text-align: center;
-
 }
 .kids-product-desc{
     font-size: 3rem;
