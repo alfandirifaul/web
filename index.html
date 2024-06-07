@@ -1,123 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+
+    <!-- S: Metas -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/main.js"></script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- E: Metas -->
+
+    <!-- S: Document Title -->
+    <title>VKellogg’s</title>
+    <!-- E: Document Title -->
+
+    <!-- S: Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- E: Fonts -->
+
+    <!-- S: Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- E: Stylesheets -->
+
 </head>
 <body>
-    <div class="main-container">
-        <header>
-                <nav class="navbar">
-                    <a href="#" class="nav-item nav-logo"><img class="nav-logo" src="/assets/logo-no-background.png" alt=""></a>
-                    <div class="navbar-item-box">
-                        <a href="#home" class="nav-item">Home</a>
-                        <a href="/page/about.html" class="nav-item">About</a>
-                        <a href="/page/products.html" class="nav-item">Product</a>
-                        <a href="/page/recipe.html" class="nav-item">Recipe</a>
-                        <a href="/page/contact.html" class="nav-item">Contact</a>
-                    </div>
-                </nav>
-        </header>
 
-        <div class="line">
-            <hr class="nav-line">
-        </div>
+  <!-- S: Header -->
+  <header id="header" class="header">
+    <div class="container">
 
-        <section id="home">
-            <div class="home-main">
-                <div class="banner">
-                    <img src="/assets/logo-no-background.png" alt="" class="img-logo-banner">
-                    <button id="whats-new-btn">
-                        Whats New
-                    </button>
-                </div>
-               
-                <div class="best-seller"></div>
-                <div class="best-recipe"></div>
+      <!-- S: Header Brand -->
+      <a href="index.html" class="header-brand">
+        <h1 class="header-logo">VKellogg’s</h1>
+      </a>
+      <!-- S: Header Brand -->
 
-                <div class="story-box-about">
-                    <div class="img-story-container">
-                        <img src="./assets/cereal.png" alt="" class="story-img">
-                    </div>
-
-                    <div class="story-desc-box">
-                        <p class="story-desc">Kellogg’s, a leading American producer of ready-to-eat cereals 
-                            and other food products, is headquartered in Battle Creek, Michigan. 
-                            Founded in 1900 as the Sanitas Food Company by brothers W.K. Kellogg 
-                            and Dr. John H. Kellogg, they developed Corn Flakes, one of the earliest 
-                            and most popular breakfast cereals in the U.S. W.K. Kellogg later bought 
-                            out his brother and established the Battle Creek Toasted Corn Flake Company 
-                            in 1906. The company thrived through innovative advertising and quality improvements, 
-                            adopting the name Kellogg’s in 1922 as it expanded beyond cornflakes.
-                        </p>
-                    
-                        <a href="/page/about.html#about" class="learn-more-history">
-                            <h3 class="learn-more-">LEARN MORE</h3>
-                        </a>
-                    </div>
-
-                   
-                </div>
-
-                <div class="many-product">
-                    <img src="/assets/many-cereal.jpeg" alt="" class="many-products-img">
-                    <div class="left-side-cereal">
-                        <h1 class="many-product-title">
-                            So many great <br> cereal under <br> one prestigious <br> brand.
-                        </h1>
-
-                        <div class="explore-link-container">
-                            <h5 class="explore-product">
-                                <a href="/page/products.html" class="link-product">
-                                    EXPLORE THEM ALL
-                                </a>
-                            </h5>
-                           
-                            <a href="/page/products.html" class="link-product">
-                                    <div class="arrow-link"></div>
-                            </a>
-                        </div>   
-                    </div>        
-                </div>
-
-                <div class="our-story-main">
-                    <div class="left-side-story">
-                        <h5 class="our-story-title">Our Story</h5>
-                        <h1 class="our-story-main-title">It started with <br> sereal</h1>
-                        <p class="our-story-describe">
-                            Kellogg’s, a leading American producer of ready-to-eat cereals and other food products, 
-                            is headquartered in Battle Creek, Michigan. Founded in 1900 as the Sanitas Food Company by 
-                            brothers W.K. Kellogg and Dr. John H. Kellogg, they developed Corn Flakes, one of the earliest 
-                            and most popular breakfast cereals in the U.S. W.K. Kellogg later bought out his brother and 
-                            established the Battle Creek Toasted Corn Flake Company in 1906. The company thrived through 
-                            innovative advertising and quality improvements, adopting the name Kellogg’s in 1922 as it expanded 
-                            beyond cornflakes.
-                        <a href="/page/about.html#history" class="check-it-out">
-                            <h3 class="check-it-out"><u>CHECK IT OUT</u></h3>
-                        </a>
-
-                    </div>
-                    <div class="right-side-story">
-                        <img src="/assets/corn-cereal.png" alt="" class="right-img">
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-    
-       
-
-       
-       
-
-
+      <!-- S: Header Navigation -->
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item active">
+            <a href="index.html" class="header-nav-link">Home</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="products.html" class="header-nav-link">Products</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="recipes.html" class="header-nav-link">Recipes</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="about.html" class="header-nav-link">About Us</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="contact.html" class="header-nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- S: Header Navigation -->
 
     </div>
-    
+  </header>
+  <!-- E: Header -->
+
+  <!-- S: Main -->
+  <main class="main">
+
+    <!-- S: Section: Hero -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="hero-caption">
+          <h2 class="hero-title font-primary">
+            Fuel Your <span class="font-script text-primary">Day</span>, Fuel Your <span class="font-script text-primary">Fun</span> !
+          </h2>
+          <p class="hero-description">
+            Explore our delicious and nutritious breakfast cereals
+          </p>
+        </div>
+
+        <a href="#best-sellers" class="btn btn-primary">Shop Cereals</a>
+      </div>
+    </section>
+    <!-- E: Section: Hero -->
+
+    <!-- S: Section: Best Sellers -->
+    <section id="best-sellers" class="best-sellers section">
+      <div class="container text-center">
+
+        <div class="section-header">
+          <h2 class="section-title font-primary">
+          <span class="font-script">
+            VKellogg’s
+          </span>
+            Best Seller Products
+          </h2>
+          <p class="section-subtitle">
+            The Cereals & Snacks You Already Know & Love
+          </p>
+        </div>
+
+        <div class="best-sellers-list product-list">
+          <a href="" class="product-box">
+            <di>
+              <img src="./img/brand-1.png" alt="brand 1" class="product-brand">
+            </di>
+            <img src="./img/product-1.png" alt="product 1" class="product-image">
+            <h3 class="product-title font-primary">Kellogg's Corn Flakes® Honey Flavor cereal</h3>
+          </a>
+          <a href="" class="product-box">
+            <di>
+              <img src="./img/brand-2.png" alt="brand 2" class="product-brand">
+            </di>
+            <img src="./img/product-2.png" alt="product 2" class="product-image">
+            <h3 class="product-title font-primary">Kellogg's Honey Smacks® cereal</h3>
+          </a>
+          <a href="" class="product-box">
+            <di>
+              <img src="./img/brand-3.png" alt="brand 3" class="product-brand">
+            </di>
+            <img src="./img/product-3.png" alt="product 3" class="product-image">
+            <h3 class="product-title font-primary">Kellogg's Frosted Flakes® Cinnamon French Toast</h3>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- E: Section: Best Sellers -->
+
+    <!-- S: Section: Best Recipes -->
+    <section id="best-recipes" class="best-recipes section">
+      <div class="container text-center">
+
+        <div class="section-header">
+          <h2 class="section-title font-primary">
+          <span class="font-script">
+            VKellogg’s
+          </span>
+            Best Recipes
+          </h2>
+          <p class="section-subtitle">
+            The Cereals & Snacks You Already Know & Love
+          </p>
+        </div>
+
+        <div class="best-recipes-list recipe-list">
+          <a href="" class="recipe-box">
+            <img src="./img/recipe-1.png" alt="recipe 1" class="recipe-image">
+            <span class="recipe-caption">
+              <h3 class="recipe-title font-primary">Apple Pie Overnight Wheat</h3>
+              <p class="recipe-meta">
+                15 min <span class="recipe-separator">|</span> 4 servings
+              </p>
+            </span>
+          </a>
+          <a href="" class="recipe-box">
+            <img src="./img/recipe-2.png" alt="recipe 2" class="recipe-image">
+            <span class="recipe-caption">
+              <h3 class="recipe-title font-primary">Baked Apple Pancake</h3>
+              <p class="recipe-meta">
+                10 min <span class="recipe-separator">|</span> 5 servings
+              </p>
+            </span>
+          </a>
+          <a href="" class="recipe-box">
+            <img src="./img/recipe-3.png" alt="recipe 3" class="recipe-image">
+            <span class="recipe-caption">
+              <h3 class="recipe-title font-primary">Banana Date Bread</h3>
+              <p class="recipe-meta">
+                8 min <span class="recipe-separator">|</span> 2 servings
+              </p>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- E: Section: Best Recipes -->
+
+  </main>
+  <!-- E: Main -->
+
+  <!-- S: Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      Copyright &copy; 2023, Ahmad Irfan Maulana
+    </div>
+  </footer>
+  <!-- E: Footer -->
+
+  <!-- S: Scripts -->
+  <script src="js/main.js"></script>
+  <!-- S: Scripts -->
+
 </body>
 </html>
